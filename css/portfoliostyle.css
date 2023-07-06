@@ -120,7 +120,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
 }
 
 #imhotep{
-	height: 50vh;
+	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bannerImhotep.png);
 	text-align: center !important;
@@ -131,7 +131,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
 }
 
 #materials{
-	height: 50vh;
+	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bannerMaterials.png);
 	text-align: left; !important;
@@ -142,7 +142,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
 }
 
 #others{
-	height: 50vh;
+	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bannerOthers.png);
 	text-align: right; !important;
@@ -152,7 +152,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
 }
 
 img.logoImhotep{
-	padding-top: 100px;
+	padding-top: 5vh;
 	width: 50vw;
 }
 
@@ -161,12 +161,12 @@ h1.name{
 	color: rgba(222,222,222,1);
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 50px;
+	padding: 5vh;
 }
 
 #button{
 	text-align: center !important;
-	padding-top: 15vh;
+	padding-top: 20vh;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -182,7 +182,7 @@ button.bttnPage{
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	font-size: 6vw;
+  	font-size: 3vw;
   	margin: 0px 0px;
   	cursor: pointer;
 }
@@ -196,7 +196,7 @@ button.bttnPage:hover{
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	font-size: 6vw;
+  	font-size: 3vw;
   	margin: 0px 0px;
   	cursor: pointer;
 }

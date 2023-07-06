@@ -168,11 +168,11 @@ button.bttnSocials{
 	border-radius: 50%;
   	border: none;
   	color: white;
-  	padding: 2vh 2.2vh;
+  	padding: 1vh 1.2vh;
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	margin: 0px 0.5vw;
+  	margin: 0px 2vw;
   	cursor: pointer;
 }
 
@@ -181,16 +181,17 @@ button.bttnSocials:hover{
 	border-radius: 50%;
   	border: none;
   	color: white;
-  	padding: 2vh 2.2vh;
+  	padding: 1vh 1.2vh;
   	text-align: center;
   	text-decoration: none;
   	display: inline-block;
-  	margin: 0px 0.5vw;
+  	margin: 0px 2vw;
   	cursor: pointer;
 }
 
 button.bttnSocials img.iconSocials{
 	width: 3vh;
+	height: auto;
 }
 
 
@@ -200,6 +201,9 @@ button.bttnSocials img.iconSocials{
 div#footer{
 	text-align: center !important;
 	color: #DEDEDE;
+	font-size: 1vh;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 p.copyright{
