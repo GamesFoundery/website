@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .gallery a {
+      flex: 1 1 100%; /* Images occupy full width of their column */
+      max-width: 540px;
+      padding: 1px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Responsive Styles */
+    @media (min-width: 768px) {
+      .gallery a {
+        flex-basis: calc(50% - 5px); /* Two columns with a small gap between them */
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .gallery a {
+        flex-basis: calc(33.3333% - 10px); /* Three columns with a small gap between them */
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .gallery a {
+        flex-basis: calc(25% - 15px); /* Four columns with a small gap between them */
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <a href="page1.html"><img src="img/materials/thumbnailMarble.jpg" alt="Image 1"></a>
+    <a href="page2.html"><img src="img/materials/thumbnailWood.jpg" alt="Image 2"></a>
+    <a href="page2.html"><img src="img/materials/thumbnailStone.jpg" alt="Image 3"></a>
+    <a href="page2.html"><img src="img/materials/thumbnailChristmas.jpg" alt="Image 4"></a>
+    <a href="page1.html"><img src="img/materials/thumbnailMarble.jpg" alt="Image 1"></a>
+    <a href="page2.html"><img src="img/materials/thumbnailWood.jpg" alt="Image 2"></a>
+    <a href="page2.html"><img src="img/materials/thumbnailStone.jpg" alt="Image 3"></a>
+    <a href="page2.html"><img src="img/materials/thumbnailChristmas.jpg" alt="Image 4"></a>
+    <!-- Add more image links as needed -->
+  </div>
+</body>
+</html>
