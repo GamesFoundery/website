@@ -1,0 +1,106 @@
+<!-- HTML Nav Bar to paste in html files -->
+
+<div id="header">
+	<div id="header-left">
+		<nav class="navBar">
+			<ul>
+				<li class="navBttn">
+					<a class="navLinkActual" href="#">
+						HOME
+					</a>
+				</li>
+				<li class="navBttn">
+					<a class="navLink"href="php/contact.php">
+						CONTACT
+					</a>
+				</li>				
+			</ul>
+		</nav>			
+	</div>
+
+	<div id="header-logo">
+		<img class="logoSite" src="img/logo_jules.png">
+	</div>
+
+	<div id="header-right">
+		<nav class="navBar">
+			<ul>
+				<li class="navBttn">
+					<a class="navLink" href="portfolio.html">
+						PORTFOLIO
+					</a>
+				</li>
+				<li class="navBttn">
+					<a class="navLink" href="games.html">
+						GAMES PROJECTS
+					</a>
+				</li>			
+			</ul>
+		</nav>			
+	</div>
+</div>
+
+<!-- Navigation bar style to paste in css documents -->
+
+#header{
+	padding: 0px 0px;
+	overflow: no-content;
+	display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center !important;
+}
+
+div#header div {
+	display: table-cell;
+}
+
+#header-logo {
+	width: 10%;
+	padding-top: 10px;
+	vertical-align: top;
+	text-align: center !important;
+}
+
+img.logoSite{
+	max-height: 100px;
+	vertical-align: top;
+	margin-top: 10px;
+	max-width: 210px;
+	width: 100%;
+}
+
+#header-left {
+	width: 40%;
+	vertical-align: middle;
+}
+
+#header-right {
+    width: 40%;
+    border-color: blue;
+    vertical-align: middle; 
+}
+
+nav.navBar ul li.navBttn a.navLink{
+	color: #BABABA;
+	text-decoration: none;
+}
+
+nav.navBar ul li.navBttn{
+	list-style-type: none;
+	font-size: 1.5vw;
+	display: inline-block;
+	padding-inline: 20px;
+}
+
+nav.navBar ul li.navBttn a.navLink:hover{
+	color: #DEDEDE;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.navBar ul li.navBttn a.navLinkActual{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}

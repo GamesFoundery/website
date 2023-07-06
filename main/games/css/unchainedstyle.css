@@ -1,0 +1,285 @@
+@font-face { font-family: Montserrat; src: url('../../fonts/Montserrat-Regular.ttf'); } 
+@font-face { font-family: Montserrat; font-weight: bold; src: url('../../fonts/Montserrat-Bold.ttf');}
+@font-face { font-family: Montserrat; font-style: italic; src: url('../../fonts/Montserrat-Italic.ttf');}
+
+html{
+	font-family: Montserrat;
+	background-color: #1A1A1A;
+	scroll-behavior: smooth;
+}
+
+.goTopBttn{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: fixed;
+	background-color: rgba(0, 150, 204, .5);
+	right: 5vw;
+	bottom: 7vh;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+}
+
+.goTopBttn:hover{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: fixed;
+	background-color: rgba(0, 150, 204, 1.0);
+	right: 5vw;
+	bottom: 7vh;
+}
+
+#header{
+	padding: 0px 0px;
+	overflow: no-content;
+	display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center !important;
+    border-bottom: 1px solid #BABABA;
+}
+
+div#header div {
+	display: table-cell;
+}
+
+#header-logo {
+	width: 10%;
+	padding-top: 10px;
+	vertical-align: top;
+	text-align: center !important;
+}
+
+img.logoSite{
+	max-height: 100px;
+	vertical-align: top;
+	margin-top: 10px;
+	max-width: 210px;
+	width: 100%;
+	margin-bottom: 1vh;
+}
+
+#header-left {
+	width: 40%;
+	vertical-align: middle;
+}
+
+#header-right {
+    width: 40%;
+    border-color: blue;
+    vertical-align: middle; 
+}
+
+nav.navBar ul li.navBttn a.navLink{
+	color: #BABABA;
+	text-decoration: none;
+}
+
+nav.navBar ul li.navBttn{
+	list-style-type: none;
+	font-size: 1.5vw;
+	display: inline-block;
+	padding-inline: 20px;
+}
+
+nav.navBar ul li.navBttn a.navLink:hover{
+	color: #DEDEDE;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.navBar ul li.navBttn a.navLinkActual{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#gamesNavBar{
+	text-align: center !important;
+}
+
+nav.navBar ul li.gamesNavBttn a.gamesNavLink{
+	color: #BABABA;
+	text-decoration: none;
+}
+
+nav.navBar ul li.gamesNavBttn{
+	list-style-type: none;
+	font-size: 1.2vw;
+	display: inline-block;
+	padding-inline: 20px;
+}
+
+nav.navBar ul li.gamesNavBttn a.gamesNavLink:hover{
+	color: #DEDEDE;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.navBar ul li.gamesNavBttn a.gamesNavLinkActual{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#banner{
+	width: 100%;
+	height: 80vh;
+	background-image: url(../img/unchained/bgUnchained.png);
+	background-position: center !important;
+}
+
+.pageTitle{
+	color: #DEDEDE;
+	margin: 0px;
+	padding-top: 35vh;
+	padding-left: 5vw;
+	margin-bottom: 0vh;
+	font-size: 10vw;
+}
+
+.productionYear{
+	color: #DEDEDE;
+	padding-top: 0.2vh;
+	padding-left: 5vw;
+	margin: 0px;
+	font-size: 2vw;
+}
+
+.infos{
+	width: 100%;
+}
+
+.pitch{
+	color: #DEDEDE;
+	padding-top: 5vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	margin: 0px;
+	font-size: 2vw;
+}
+
+.description{
+	color: #BABABA;
+	padding-top: 2vh;
+	padding-left: 2vw;
+	margin: 0px;
+	font-size: 1vw;
+	padding-bottom: 8vh;
+	line-height: 4vh;
+
+}
+
+div#bttnDownload{
+	width: 100%;
+	text-align: center !important;
+	margin-bottom: 50px;
+	font-size: 50px;
+	display: inline-block;
+}
+
+button.bttnPage{
+	background-color: #0096CC;
+	border-radius: 50px;
+  	border: 3px solid #0096CC;
+  	color: white;
+  	padding: 2vh 5vw;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 1.5vw;
+  	margin: 0px 0px;
+  	cursor: pointer;
+}
+
+button.bttnPage:hover{
+	background-color: transparent;
+	border-radius: 50px;
+  	border: 3px solid #00BBFF;
+  	color: white;
+  	padding: 2vh 5vw;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 1.55vw;
+  	margin: 0px 0px;
+  	cursor: pointer;
+}
+
+a.bttnLink button.bttnPage{
+	text-decoration: none;
+	color: #1A1A1A;
+	font-weight: bold;
+}
+
+a.bttnLink button.bttnPage:hover{
+	text-decoration: none;
+	color: #00BBFF;
+	font-weight: bold;
+}
+
+.separator{
+	color: #DEDEDE;
+	width: 80%;
+	margin-bottom: 8vh;
+}
+
+
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.creditsTitle{
+	text-align: center !important;
+	color: #DEDEDE;
+	font-size: 5vw;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+}
+
+.title{
+	color: #0096CC;
+	margin: 0px;
+	font-size: 1.5vw;
+	padding: 0 5vw;
+	padding-bottom: 2vh;
+}
+
+.row{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center !important;
+	padding-top: 2vh;
+}
+
+.lastRow{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center !important;
+	padding-top: 2vh;
+}
+.name{
+	color: #DEDEDE;
+	margin: 0px;
+	margin-bottom: 0vh;
+	font-size: 1.2vw;
+	padding-bottom: 0.5vh;
+}
+
+.nameInvisible{
+	color: rgba(0, 0, 0, 0);
+	user-select: false;
+}
+
+div#footer{
+	text-align: center !important;
+	color: #DEDEDE;
+	padding-top: 5vh;
+}
+
+p.copyright{
+}

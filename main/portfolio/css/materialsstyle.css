@@ -1,0 +1,263 @@
+@font-face { font-family: Montserrat; src: url('../../fonts/Montserrat-Regular.ttf'); } 
+@font-face { font-family: Montserrat; font-weight: bold; src: url('../../fonts/Montserrat-Bold.ttf');}
+@font-face { font-family: Montserrat; font-style: italic; src: url('../../fonts/Montserrat-Italic.ttf');}
+
+html{
+	font-family: Montserrat;
+	background-color: #1A1A1A;
+	scroll-behavior: smooth;
+}
+
+.goTopBttn{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: fixed;
+	background-color: rgba(0, 150, 204, .5);
+	right: 5vw;
+	bottom: 7vh;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+}
+
+.goTopBttn:hover{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: fixed;
+	background-color: rgba(0, 150, 204, 1.0);
+	right: 5vw;
+	bottom: 7vh;
+}
+
+
+#header{
+	padding: 0px 0px;
+	overflow: no-content;
+	display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center !important;
+    border-bottom: 1px solid #BABABA;
+}
+
+div#header div {
+	display: table-cell;
+}
+
+#header-logo {
+	width: 10%;
+	padding-top: 10px;
+	vertical-align: top;
+	text-align: center !important;
+}
+
+img.logoSite{
+	max-height: 100px;
+	vertical-align: top;
+	margin-top: 10px;
+	max-width: 210px;
+	width: 100%;
+	margin-bottom: 1vh;
+}
+
+#header-left {
+	width: 40%;
+	vertical-align: middle;
+}
+
+#header-right {
+    width: 40%;
+    border-color: blue;
+    vertical-align: middle; 
+}
+
+nav.navBar ul li.navBttn a.navLink{
+	color: #BABABA;
+	text-decoration: none;
+}
+
+nav.navBar ul li.navBttn{
+	list-style-type: none;
+	font-size: 1.5vw;
+	display: inline-block;
+	padding-inline: 20px;
+}
+
+nav.navBar ul li.navBttn a.navLink:hover{
+	color: #DEDEDE;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.navBar ul li.navBttn a.navLinkActual{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#portfolioNavBar{
+	text-align: center !important;
+}
+
+nav.navBar ul li.portfolioNavBttn a.portfolioNavLink{
+	color: #BABABA;
+	text-decoration: none;
+}
+
+nav.navBar ul li.portfolioNavBttn{
+	list-style-type: none;
+	font-size: 1.2vw;
+	display: inline-block;
+	padding-inline: 20px;
+}
+
+nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
+	color: #DEDEDE;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.navBar ul li.portfolioNavBttn a.portfolioNavLinkActual{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/*table.gallery{
+	display: inline-block;
+	margin: auto;
+}
+
+th.row1{
+	margin: 1px;
+	padding: 1px;
+	background-image: url(../img/materials/thumbnailMarble.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20vw;
+}
+
+th.row2{
+	margin: 1px;
+	padding: 1px;
+	background-image: url(../img/materials/thumbnailWood.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20vw;
+}
+
+th.row3{
+	margin: 1px;
+	padding: 1px;
+	background-image: url(../img/materials/thumbnailStone.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20vw;
+}
+
+th.row4{
+	margin: 1px;
+	padding: 1px;
+	background-image: url(../img/materials/thumbnailMarble.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20vw;
+}
+
+th.row5{
+	margin: 1px;
+	padding: 1px;
+	background-image: url(../img/materials/thumbnailWood.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 20vw;
+}*/
+
+.squareGrid{
+	box-sizing: border-box;
+}
+
+.albumGrid{
+	padding-right: 0.0625rem;
+}
+
+.row{
+	display: flex;
+	-webkit-box-flex: 0;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-moz-box-direction: normal;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.albumGridItem{
+	padding-left: 0.0625rem;
+	padding-top: 0.0625rem;
+	position: relative;
+}
+
+.albumGridItem a.link{
+	vertical-align: top;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+.albumGridItem img.imgFluid{
+	width: 100%;
+	vertical-align: top;
+}
+
+.albumGridItemOverlay{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(34,34,34,0), rgba(34,34,34,0.7));
+	transition: opacity .3s linear;
+}
+
+.albumGridItemOverlayInner{
+	position: absolute;
+	padding: 1.3125rem 2rem;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.albumGridItemName{
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #fff;
+	line-height: 1.5rem;
+	overflow-wrap: break-word;
+}
+
+img.img{
+	width: 100%;
+	height: auto;
+	max-width: 380px;
+	max-height: 380px;
+}
+
+
+h1.name{
+	font-size: 3vh;
+	color: rgba(222,222,222,1);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#footer{
+	text-align: center !important;
+	color: #DEDEDE;
+	font-size: 2vh;
+}
+
+p.copyright{
+}
