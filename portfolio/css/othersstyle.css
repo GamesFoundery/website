@@ -125,9 +125,53 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLinkActual{
 	text-decoration: none;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery a {
+	flex: 1 1 100%; /* Images occupy full width of their column */
+    margin: 0.02vh 0.1vw;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+    /* Responsive Styles */
+@media (min-width: 768px) {
+    .gallery a {
+    	flex-basis: calc(50% - 5px); /* Two columns with a small gap between them */
+    }
+}
+
+/*@media (min-width: 1024px) {
+    .gallery a {
+        flex-basis: calc(33.3333% - 10px); /* Three columns with a small gap between them */
+    }
+}
+
+/*@media (min-width: 1200px) {
+    .gallery a {
+    	flex-basis: calc(25% - 15px); /* Four columns with a small gap between them */
+    }
+}
+
+
+h1.name{
+	font-size: 3vh;
+	color: rgba(222,222,222,1);
+	margin-left: auto;
+	margin-right: auto;
+}
+
 div#footer{
 	text-align: center !important;
 	color: #DEDEDE;
+	font-size: 2vh;
 }
 
 p.copyright{

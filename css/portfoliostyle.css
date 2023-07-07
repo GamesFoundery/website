@@ -122,7 +122,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
 #imhotep{
 	height: 70vh;
 	border-radius: 50px;
-	background-image: url(../img/bannerImhotep.png);
+	background-image: url(../img/bannerImhotep.jpg);
 	text-align: center !important;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -133,7 +133,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
 #materials{
 	height: 70vh;
 	border-radius: 50px;
-	background-image: url(../img/bannerMaterials.png);
+	background-image: url(../img/bannerMaterials.jpg);
 	text-align: left; !important;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -144,7 +144,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
 #others{
 	height: 70vh;
 	border-radius: 50px;
-	background-image: url(../img/bannerOthers.png);
+	background-image: url(../img/bannerOthers.jpg);
 	text-align: right; !important;
 	margin-top: 10px;
 	background-position: center !important;
