@@ -36,6 +36,10 @@ img.logoSite{
 	width: 100%;
 }
 
+img.logoSite:hover{
+	transform: scale(1.1);
+}
+
 #header-left {
 	width: 40%;
 	vertical-align: middle;
@@ -74,14 +78,27 @@ nav.navBar ul li.navBttn a.navLinkActual{
 
 div#texts{
 	text-align: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+div#texts:hover{
+	transform: scale(1.05);
 }
 
 h1.name{
-
 	font-size: 10.5vw;
 	color: rgba(222,222,222,1);
 	margin-top: 100px;
 	margin-bottom: 0px;
+	
+}
+
+h1.name:hover{
+	font-size: 10.5vw;
+	color: rgba(222,222,222,1);
+	margin-top: 100px;
+	margin-bottom: 0px;
+	transition: transform 0.3s ease-in-out;
 }
 
 h2.position{
