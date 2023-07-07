@@ -180,20 +180,71 @@ video.square{
 	display: inline-flex;
 }
 
-.previous{
+.previous1{
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/marble/beauty03.jpg) ;
+	background-image: url(../img/christmas/beauty03.jpg) ;
+	background-position: center !important;
 	float: left;
 }
 
-.next{
+.next1{
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/stone/beauty01.jpg);
+	background-image: url(../img/nodevember02/001.jpg);
 	background-position: center !important;
 	float: right !important;
 }
+
+
+.previous2{
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/nodevember01/beauty04.jpg) ;
+	background-position: center !important;
+	float: left;
+}
+
+.next2{
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/nodevember03/004.jpg);
+	background-position: center !important;
+	float: right !important;
+}
+
+.previous3{
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/nodevember02/004.jpg) ;
+	background-position: center !important;
+	float: left;
+}
+
+.next3{
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/nodevember04/001.jpg);
+	background-position: center !important;
+	float: right !important;
+}
+
+.previous4{
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/nodevember03/004.jpg) ;
+	background-position: center !important;
+	float: left;
+}
+
+.next4{
+	width: 50%;
+	height: 100%;
+	background-image: url(../img/marble/beauty04.jpg);
+	background-position: center !important;
+	float: right !important;
+}
+
 
 .navTitle{
 	color: #DEDEDE;

@@ -134,10 +134,7 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLinkActual{
 .gallery a {
 	flex: 1 1 100%; /* Images occupy full width of their column */
     max-width: 800px;
-    margin-top: .08vh;
-    margin-bottom: .08vh;
-    margin-left: .08vw;
-    margin-right: .08vw;
+    margin: 0.02vh 0.1vw;
 }
 
 .gallery img {

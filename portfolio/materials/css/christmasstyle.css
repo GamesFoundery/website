@@ -162,6 +162,14 @@ img.fullScreen{
 	padding-bottom: 2vh;
 }
 
+video.fullScreen{
+	display: block;
+	width: 95vw;
+	height: auto;
+	margin: auto;
+	padding-bottom: 2vh;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -202,14 +210,15 @@ img.fullScreen{
 .previous{
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/wood/beauty01.jpg) ;
+	background-image: url(../img/stone/beauty01.jpg) ;
+	background-position: center;
 	float: left;
 }
 
 .next{
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/stone/beauty01.jpg);
+	background-image: url(../img/nodevember01/beauty04.jpg);
 	background-position: center !important;
 	float: right !important;
 }
