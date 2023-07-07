@@ -31,6 +31,7 @@ html{
 	bottom: 7vh;
 }
 
+
 #header{
 	padding: 0px 0px;
 	overflow: no-content;
@@ -136,8 +137,8 @@ nav.navBar ul li.portfolioNavBttn a.portfolioNavLinkActual{
 
 .description{
 	color: #BABABA;
-	margin-left: 3vw;
-	margin-right: 5vw;
+	margin-left: 5.5vw;
+	margin-right: 8vw;
 	text-align: left !important;
 	margin-top: 0vh;
 	margin-bottom: 5vh;
@@ -167,19 +168,9 @@ img.fullScreen{
 }
 
 img.square{
-	width: 40%;
-	display: block;
-	float: left;
-	margin-left: 5vw;
-	margin-right: 0vw;
 }
 
 video.square{
-	width: 40%;
-	display: block;
-	float: right;
-	margin-left: 0vw;
-	margin-right: 5vw;
 }
 
 #matsNavigation{
@@ -192,14 +183,14 @@ video.square{
 .previous{
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/wood/beauty01.jpg) ;
+	background-image: url(../img/marble/beauty03.jpg) ;
 	float: left;
 }
 
 .next{
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/christmas/beauty01.jpg);
+	background-image: url(../img/stone/beauty01.jpg);
 	background-position: center !important;
 	float: right !important;
 }
@@ -209,6 +200,37 @@ video.square{
 	font-size: 7vh;
 	padding-left: 2vw;
 }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    max-width: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+
+.gallery video {
+    width: 100%;
+    height: auto;
+    max-width: calc(50% - 5px);
+    margin-bottom: 10px;
+}
+
+    /* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery img {
+    	max-width: 100%;
+    }
+    .gallery video {
+    	max-width: 100%;
+    }
+}
+
 
 
 
