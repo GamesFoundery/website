@@ -82,8 +82,8 @@ nav.navBar ul li.navBttn a.navLinkActual{
 
 #contactBox{
 	margin-top: 5vh;
-	width: 60%;
-	height: 80%;
+	width: 80%;
+	height: 90%;
 	margin: auto;
 	display: table;
 }
@@ -94,9 +94,6 @@ div.leftBox{
 	padding: 0%;
 	width: 50%;
 	height: 100%;
-	background-image: url(../img/contactBcg.png);
-	background-size: 100%;
-	background-position: center !important;
 	border-top-left-radius: 45px;
 	border-bottom-left-radius: 45px;
 	float: left;
@@ -107,9 +104,6 @@ div.rightBox{
 	padding: 0%;
 	width: 50%;
 	height: 100%;
-	background-color: #DEDEDE;
-	background-size: 100%;
-	background-position: center !important;
 	border-top-right-radius: 45px;
 	border-bottom-right-radius: 45px;
 	float: right;
@@ -218,18 +212,11 @@ input.name{
 	border: 3px solid #0096CC;
 	width: 40%;
 	font-size: 1vw;
+	outline: none;
 }
 
 input.name:hover{
-	padding-left: 10px;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
-	margin-bottom: 2vh;
-	background-color: #DEDEDE;
-	border-radius: 50px;
 	border: 3px solid #00BBFF;
-	width: 40%;
-	font-size: 1vw;
 }
 
 input.email{
@@ -243,22 +230,15 @@ input.email{
 	border: 3px solid #0096CC;
 	width: 84%;
 	font-size: 1vw;
+	outline: none;
 }
 
-input.email:hover{
-	padding-left: 10px;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-	background-color: #DEDEDE;
-	border-radius: 50px;
+input.email:hover{	
 	border: 3px solid #00BBFF;
-	width: 84%;
-	font-size: 1vw;
 }
 
-input.message{
+textarea.message{
+	resize: none;
 	padding-left: 10px;
 	padding-top: 1vh;
 	padding-bottom: 1vh;
@@ -268,20 +248,16 @@ input.message{
 	border-radius: 20px;
 	border: 3px solid #0096CC;
 	width: 84%;
+	height: 150px;
 	font-size: 1vw;
+	transition: all 0.2s;
+	outline: none;
+	overflow: auto;
+
 }
 
-input.message:hover{
-	padding-left: 10px;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-	background-color: #DEDEDE;
-	border-radius: 20px;
-	border: 3px solid #0096CC;
-	width: 84%;
-	font-size: 1vw;
+textarea.message:hover{
+	border: 3px solid #00BBFF;
 }
 
 input.submitBttn{
@@ -290,28 +266,22 @@ input.submitBttn{
   	border: 3px solid #0096CC;
   	padding-top: 1vh;
   	padding-bottom: 1vh;
-  	font-weight: bold;
   	text-align: center;
+  	margin-top: 2vh;
   	text-decoration: none;
   	display: inline-block;
   	font-size: 1vw;
   	cursor: pointer;
-  	width: 94%;
+  	width: 87%;
+  	color: #1A1A1A;
+  	outline: none;
 }
 
 input.submitBttn:hover{
 	background-color: transparent;
-	border-radius: 50px;
   	border: 3px solid #00BBFF;
-  	padding-top: 1vh;
-  	padding-bottom: 1vh;
+  	color: #00BBFF;
   	font-weight: bold;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 1vw;
-  	cursor: pointer;
-  	width: 94%;
 }
 
 div#footer{
