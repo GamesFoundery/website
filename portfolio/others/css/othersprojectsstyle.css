@@ -162,6 +162,14 @@ img.fullScreen{
 	padding-bottom: 2vh;
 }
 
+video.fullScreen{
+	display: block;
+	width: 95vw;
+	height: auto;
+	margin: auto;
+	padding-bottom: 2vh;
+}
+
 #squareImages{
 	width: 100%;
 	display: inline-block;
@@ -190,17 +198,25 @@ video.square{
 	display: inline-flex;
 }
 
-.previous{
+/*.previous{
 	width: 50%;
 	height: 100%;
 	background-image: url(../img/wood/beauty01.jpg) ;
 	float: left;
+}*/
+
+.nextEgg{
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/sphinx/001.jpg);
+	background-position: center !important;
+	float: right !important;
 }
 
-.next{
-	width: 50%;
+.nextSphinx{
+	width: 100%;
 	height: 100%;
-	background-image: url(../img/stone/beauty01.jpg);
+	background-image: url(../img/egg/002.jpg);
 	background-position: center !important;
 	float: right !important;
 }
@@ -210,6 +226,7 @@ video.square{
 	font-size: 7vh;
 	padding-left: 2vw;
 }
+
 
 
 
