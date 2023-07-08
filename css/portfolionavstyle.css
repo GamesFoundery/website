@@ -1,0 +1,31 @@
+#header{
+	border-bottom: 1px solid #BABABA;
+}
+
+#portfolioNavBar{
+	text-align: center !important;
+}
+
+nav.navBar ul li.portfolioNavBttn a.portfolioNavLink{
+	color: #BABABA;
+	text-decoration: none;
+}
+
+nav.navBar ul li.portfolioNavBttn{
+	list-style-type: none;
+	font-size: 1.2vw;
+	display: inline-block;
+	padding-inline: 20px;
+}
+
+nav.navBar ul li.portfolioNavBttn a.portfolioNavLink:hover{
+	color: #DEDEDE;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.navBar ul li.portfolioNavBttn a.portfolioNavLinkActual{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+}

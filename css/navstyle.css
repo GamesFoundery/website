@@ -1,0 +1,85 @@
+@font-face { font-family: Montserrat; src: url('../fonts/Montserrat-Regular.ttf'); } 
+@font-face { font-family: Montserrat; font-weight: bold; src: url('../fonts/Montserrat-Bold.ttf');}
+@font-face { font-family: Montserrat; font-style: italic; src: url('../fonts/Montserrat-Italic.ttf');}
+
+html{
+	font-family: Montserrat;
+	background-color: #1A1A1A;
+}
+
+#header{
+	padding: 0px 0px;
+	overflow: no-content;
+	display: table;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center !important;
+}
+
+div#header div {
+	display: table-cell;
+}
+
+#header-logo {
+	width: 10%;
+	padding-top: 10px;
+	vertical-align: top;
+	text-align: center !important;
+}
+
+img.logoSite{
+	max-height: 100px;
+	vertical-align: top;
+	margin-top: 10px;
+	max-width: 210px;
+	width: 100%;
+	padding-bottom: 1vh;
+}
+
+#header-left {
+	width: 40%;
+	vertical-align: middle;
+}
+
+#header-right {
+    width: 40%;
+    border-color: blue;
+    vertical-align: middle; 
+}
+
+nav.navBar ul li.navBttn a.navLink{
+	color: #BABABA;
+	text-decoration: none;
+}
+
+nav.navBar ul li.navBttn{
+	list-style-type: none;
+	font-size: 1.5vw;
+	display: inline-block;
+	padding-inline: 20px;
+}
+
+nav.navBar ul li.navBttn a.navLink:hover{
+	color: #DEDEDE;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav.navBar ul li.navBttn a.navLinkActual{
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div#footer{
+	text-align: center !important;
+	color: #DEDEDE;
+	font-size: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vh;
+}
+
+p.copyright{
+}
+

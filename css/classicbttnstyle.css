@@ -1,0 +1,38 @@
+#button{
+	text-align: center !important;
+	padding-top: 15vh;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button.bttnPage{
+	background-color: #0096CC;
+	border-radius: 50px;
+  	border: none;
+  	color: white;
+  	padding: 1vh 8vw;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 3vh;
+  	margin: 0px 0px;
+  	cursor: pointer;
+}
+
+button.bttnPage:hover{
+	background-color: transparent;
+  	border: 3px solid #00BBFF;
+}
+
+a.bttnLink button.bttnPage{
+	text-decoration: none;
+	color: #1A1A1A;
+	font-weight: bold;
+}
+
+a.bttnLink button.bttnPage:hover{
+	text-decoration: none;
+	color: #00BBFF;
+	font-weight: bold;
+}

@@ -1,0 +1,44 @@
+div#socials{
+	display: inline-block;
+	width: 100%;
+	text-align: center !important;
+	margin-bottom: 2vh;
+	margin-top: 5vh;
+}
+
+ul.socialsList{
+	margin: 0;
+	padding: 0;
+}
+
+button.bttnSocials{
+	background-color: #0096CC;
+	border-radius: 50%;
+  	border: none;
+  	color: white;
+  	padding: 1vh 1.2vh;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	margin: 0px 2vw;
+  	cursor: pointer;
+}
+
+button.bttnSocials:hover{
+	background-color: #00BBFF;
+	border-radius: 50%;
+  	border: none;
+  	color: white;
+  	padding: 1vh 1.2vh;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	margin: 0px 2vw;
+  	cursor: pointer;
+}
+
+button.bttnSocials img.iconSocials{
+	width: 3vh;
+	height: auto;
+}
+

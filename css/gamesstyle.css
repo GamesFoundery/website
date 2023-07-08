@@ -1,121 +1,5 @@
-@font-face { font-family: Montserrat; src: url('../fonts/Montserrat-Regular.ttf'); } 
-@font-face { font-family: Montserrat; font-weight: bold; src: url('../fonts/Montserrat-Bold.ttf');}
-@font-face { font-family: Montserrat; font-style: italic; src: url('../fonts/Montserrat-Italic.ttf');}
-
 html{
-	font-family: Montserrat;
 	background-color: #1A1A1A;
-	scroll-behavior: smooth;
-}
-
-.goTopBttn{
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	position: fixed;
-	background-color: rgba(0, 150, 204, .5);
-	right: 5vw;
-	bottom: 7vh;
-	text-decoration: none;
-	text-align: center;
-	line-height: 50px;
-}
-
-.goTopBttn:hover{
-	width: 50px;
-	height: 50px;
-	border-radius: 50px;
-	position: fixed;
-	background-color: rgba(0, 150, 204, 1.0);
-	right: 5vw;
-	bottom: 7vh;
-}
-
-#header{
-	padding: 0px 0px;
-	overflow: no-content;
-	display: table;
-    width: 100%;
-    table-layout: fixed;
-    text-align: center !important;
-    border-bottom: 1px solid #BABABA;
-}
-
-div#header div {
-	display: table-cell;
-}
-
-#header-logo {
-	width: 10%;
-	padding-top: 10px;
-	vertical-align: top;
-	text-align: center !important;
-}
-
-img.logoSite{
-	max-height: 100px;
-	vertical-align: top;
-	margin-top: 10px;
-	max-width: 210px;
-	width: 100%;
-	margin-bottom: 1vh;
-}
-
-#header-left {
-	width: 40%;
-	vertical-align: middle;
-}
-
-#header-right {
-    width: 40%;
-    border-color: blue;
-    vertical-align: middle; 
-}
-
-nav.navBar ul li.navBttn a.navLink{
-	color: #BABABA;
-	text-decoration: none;
-}
-
-nav.navBar ul li.navBttn{
-	list-style-type: none;
-	font-size: 1.5vw;
-	display: inline-block;
-	padding-inline: 20px;
-}
-
-nav.navBar ul li.navBttn a.navLink:hover{
-	color: #DEDEDE;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-nav.navBar ul li.navBttn a.navLinkActual{
-	color: #FFFFFF;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-#gamesNavBar{
-	text-align: center !important;
-}
-
-nav.navBar ul li.gamesNavBttn a.gamesNavLink{
-	color: #BABABA;
-	text-decoration: none;
-}
-
-nav.navBar ul li.gamesNavBttn{
-	list-style-type: none;
-	font-size: 1.2vw;
-	display: inline-block;
-	padding-inline: 20px;
-}
-
-nav.navBar ul li.gamesNavBttn a.gamesNavLink:hover{
-	color: #DEDEDE;
-	text-decoration: none;
-	font-weight: bold;
 }
 
 #naukar{
@@ -151,75 +35,25 @@ nav.navBar ul li.gamesNavBttn a.gamesNavLink:hover{
 	width: 100%;
 }
 
-img.logoNaukar{
+#naukar:hover{
+	transition: all 0.2s;
+	transform: scale(0.99);
+}
+
+#ligne13:hover{
+	transition: all 0.2s;
+	transform: scale(0.99);
+}
+
+#unchained:hover{
+	transition: all 0.2s;
+	transform: scale(0.99);
+}
+
+img.logoGame{
 	padding-top: 10vh;
 	width: 40vw;
 }
 
-img.logoL13{
-	padding-top: 10vh;
-	width: 40vw;
-}
 
-img.logoUnchained{
-	padding-top: 10vh;
-	width: 40vw;
-}
-
-h1.name{
-	font-size: 7vw;
-	color: rgba(222,222,222,1);
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 50px;
-}
-
-#button{
-	text-align: center !important;
-	padding-top: 15vh;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-button.bttnPage{
-	background-color: #0096CC;
-	border-radius: 50px;
-  	border: none;
-  	color: white;
-  	padding: 1vh 8vw;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 3vh;
-  	margin: 0px 0px;
-  	cursor: pointer;
-}
-
-button.bttnPage:hover{
-	background-color: transparent;
-  	border: 3px solid #00BBFF;
-}
-
-a.bttnLink button.bttnPage{
-	text-decoration: none;
-	color: #1A1A1A;
-	font-weight: bold;
-}
-
-a.bttnLink button.bttnPage:hover{
-	text-decoration: none;
-	color: #00BBFF;
-	font-weight: bold;
-}
-
-div#footer{
-	text-align: center !important;
-	color: #DEDEDE;
-	padding-top: 8vh;
-}
-
-p.copyright{
-}
 
