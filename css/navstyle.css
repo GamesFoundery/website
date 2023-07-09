@@ -7,7 +7,7 @@ html{
 	background-color: #1A1A1A;
 }
 
-#header{
+/*#header{
 	padding: 0px 0px;
 	overflow: no-content;
 	display: table;
@@ -33,6 +33,7 @@ img.logoSite{
 	margin-top: 10px;
 	max-width: 210px;
 	width: 100%;
+	min-width: 50%;
 	padding-bottom: 1vh;
 }
 
@@ -56,7 +57,7 @@ nav.navBar ul li.navBttn{
 	list-style-type: none;
 	font-size: 1.5vw;
 	display: inline-block;
-	padding-inline: 20px;
+	padding-inline: 1vw;
 }
 
 nav.navBar ul li.navBttn a.navLink:hover{
@@ -69,12 +70,68 @@ nav.navBar ul li.navBttn a.navLinkActual{
 	color: #FFFFFF;
 	font-weight: bold;
 	text-decoration: none;
+}*/
+
+#header {
+  padding: 0;
+  overflow: no-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center !important;
 }
+
+#header-logo {
+  flex: 1;
+  max-width: 210px;
+  padding: 10px;
+}
+
+img.logoSite {
+  max-height: 100px;
+  max-width: 100%;
+  margin-top: 10px;
+  padding-bottom: 1vh;
+}
+
+#header-left,
+#header-right {
+  flex: 1;
+}
+
+nav.navBar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav.navBar ul li.navBttn {
+  flex: 1;
+  font-size: 1.5vw;
+}
+
+nav.navBar ul li.navBttn a.navLink {
+  color: #bababa;
+  text-decoration: none;
+}
+
+nav.navBar ul li.navBttn a.navLink:hover {
+  color: #dedede;
+  font-weight: bold;
+}
+
+nav.navBar ul li.navBttn a.navLinkActual{
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 div#footer{
 	text-align: center !important;
 	color: #DEDEDE;
-	font-size: 2vh;
+	font-size: calc(15px + 0.390625vw);
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5vh;

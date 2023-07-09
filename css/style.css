@@ -13,6 +13,7 @@ div#texts:hover{
 
 h1.name{
 	font-size: 10.5vw;
+	min-width: 300px;
 	color: rgba(222,222,222,1);
 	margin-top: 100px;
 	margin-bottom: 0px;
@@ -26,54 +27,72 @@ h2.position{
 	margin-bottom: 50px;
 }
 
-div#buttons{
-	width: 100%;
-	text-align: center !important;
-	margin-bottom: 50px;
-	font-size: 50px;
-	display: inline-block;
+div#buttons {
+  width: 100%;
+  height: auto;
+  text-align: center !important;
+  margin-bottom: 50px;
+  font-size: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-div#bttnL{
-	width: 40%;
-	display: inline-block;
-	margin-top: 0px;
-	margin-bottom: 0px;
+div#bttnL,
+div#bttnR {
+  width: 100%;
+  max-width: 49%;
+  display: flex;
+  justify-content: center;
 }
 
-div#bttnR{
-	width: 40%;
-	display: inline-block;
+button.bttnPage {
+  background-color: #0096CC;
+  border-radius: 50px;
+  border: 3px solid #0096CC;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5vw;
+  margin: 1vh 2vw;
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-button.bttnPage{
-	background-color: #0096CC;
-	border-radius: 50px;
-  	border: 3px solid #0096CC;
-  	color: white;
-  	padding: 2% 5vw;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 1.5vw;
-  	margin: 0px 0px;
-  	cursor: pointer;
+button.bttnPage:hover {
+  background-color: transparent;
+  border: 3px solid #00BBFF;
 }
 
-button.bttnPage:hover{
-	background-color: transparent;
-  	border: 3px solid #00BBFF;
+a.bttnLink button.bttnPage {
+  text-decoration: none;
+  color: #1A1A1A;
+  font-weight: bold;
+  font-size: 2vh;
+  height: auto;
 }
 
-a.bttnLink button.bttnPage{
-	text-decoration: none;
-	color: #1A1A1A;
-	font-weight: bold;
+a.bttnLink button.bttnPage:hover {
+  color: #00BBFF;
 }
 
-a.bttnLink button.bttnPage:hover{
-	color: #00BBFF;
+@media only screen and (max-width: 300px) {
+  button.bttnPage {
+    font-size: 3.5vw;
+    margin: 2vh 4vw;
+  }
+
+  a.bttnLink button.bttnPage {
+    font-size: 4vw;
+  }
 }
+
+
+
+
 
 
 
