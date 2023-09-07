@@ -2,10 +2,12 @@
 	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bannerImhotep.jpg);
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
 	text-align: center !important;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-position: right !important;
 	width: 100%;
 }
 
@@ -17,10 +19,12 @@
 	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bannerMaterials.jpg);
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
 	text-align: left; !important;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-position: center !important;
 	width: 100%;
 }
 
@@ -32,9 +36,11 @@
 	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bannerOthers.jpg);
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
 	text-align: right; !important;
 	margin-top: 10px;
-	background-position: center !important;
 	width: 100%;
 }
 
