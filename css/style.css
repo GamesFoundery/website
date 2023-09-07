@@ -1,5 +1,6 @@
 html{
 	background-image: url(../img/homeBcg.jpg);
+  background-repeat: no-repeat;
 }
 
 div#texts{
