@@ -7,84 +7,21 @@ html{
 	background-color: #1A1A1A;
 }
 
-/*#header{
-	padding: 0px 0px;
-	overflow: no-content;
-	display: table;
-    width: 100%;
-    table-layout: fixed;
-    text-align: center !important;
-}
-
-div#header div {
-	display: table-cell;
-}
-
-#header-logo {
-	width: 10%;
-	padding-top: 10px;
-	vertical-align: top;
-	text-align: center !important;
-}
-
-img.logoSite{
-	max-height: 100px;
-	vertical-align: top;
-	margin-top: 10px;
-	max-width: 210px;
-	width: 100%;
-	min-width: 50%;
-	padding-bottom: 1vh;
-}
-
-#header-left {
-	width: 40%;
-	vertical-align: middle;
-}
-
-#header-right {
-    width: 40%;
-    border-color: blue;
-    vertical-align: middle; 
-}
-
-nav.navBar ul li.navBttn a.navLink{
-	color: #BABABA;
-	text-decoration: none;
-}
-
-nav.navBar ul li.navBttn{
-	list-style-type: none;
-	font-size: 1.5vw;
-	display: inline-block;
-	padding-inline: 1vw;
-}
-
-nav.navBar ul li.navBttn a.navLink:hover{
-	color: #DEDEDE;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-nav.navBar ul li.navBttn a.navLinkActual{
-	color: #FFFFFF;
-	font-weight: bold;
-	text-decoration: none;
-}*/
-
 #header {
-  padding: 0;
+  padding: 10px;
   overflow: no-content;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-align: center !important;
+  text-align: center;
+  position: sticky;
 }
 
 #header-logo {
-  flex: 1;
-  max-width: 210px;
-  padding: 10px;
+/*  flex: 1;*/
+  max-width: 100%;
+  height: auto;
+/*  padding: 10px;*/
 }
 
 img.logoSite {
@@ -108,7 +45,7 @@ nav.navBar ul {
 
 nav.navBar ul li.navBttn {
   flex: 1;
-  font-size: 1.5vw;
+  font-size: 100%;
 }
 
 nav.navBar ul li.navBttn a.navLink {

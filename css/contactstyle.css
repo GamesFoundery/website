@@ -2,6 +2,10 @@ html{
 	background-color: #1A1A1A;
 }
 
+body{
+	margin: 0;
+}
+
 #page{
 	background-position: center !important;
 	text-align: center !important;
@@ -171,5 +175,18 @@ input.submitBttn:hover{
   	font-weight: bold;
 }
 
+.image-container{
+	display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+}
+
+.image-container img {
+	width: 90%; /* 50% minus margin on both sides */
+}
+
+.image-container img:hover{
+	transform: scale(1.02);
+}
 
 

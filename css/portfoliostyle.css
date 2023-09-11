@@ -48,6 +48,22 @@
 	transform: scale(0.99);
 }
 
+#environments{
+	height: 70vh;
+	border-radius: 50px;
+	background-image: url(../img/bannerImhotep.jpg);
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;
+	text-align: right; !important;
+	margin-top: 10px;
+	width: 100%;
+}
+
+#environments:hover{
+	transform: scale(0.99);
+}
+
 img.logoImhotep{
 	padding-top: 5vh;
 	width: 50vw;
