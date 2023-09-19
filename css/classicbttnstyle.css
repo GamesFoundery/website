@@ -1,39 +1,75 @@
+@font-face { font-family: Montserrat; src: url('../fonts/Montserrat-Regular.ttf'); } 
+@font-face { font-family: Montserrat; font-weight: bold; src: url('../fonts/Montserrat-Bold.ttf');}
+@font-face { font-family: Montserrat; font-style: italic; src: url('../fonts/Montserrat-Italic.ttf');}
+
+*{
+	font-family: Montserrat;
+}
+
 #button{
 	text-align: center !important;
 	padding-top: 0vh;
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: inherit;
+	font-family: Montserrat;
 }
 
 button.bttnPage{
-	background-color: #0096CC;
-	border-radius: 50px;
-  	border: none;
-  	color: white;
-  	padding: 1vh 8vw;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font-size: 3vh;
-  	margin: 0px 0px;
-  	cursor: pointer;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	/*border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);*/
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px 40px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 24px;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+	color: #fff;
 }
 
 button.bttnPage:hover{
-	background-color: transparent;
-  	border: 3px solid #00BBFF;
+	letter-spacing: 3px;
+	color: #fff;
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+	transition: 0.5s;
+	filter: blur(0px);
 }
+
+/*button.bttnPage::before{
+	content: '';
+ 	width: 0;
+ 	height: 3em;
+ 	border-radius: 30em;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
+ 	transition: .5s ease;
+ 	display: block;
+ 	z-index: -1;
+}
+
+button.bttnPage:hover::before{
+	/*background-color: transparent;
+  	border: 3px solid #00BBFF;*/
+  	letter-spacing: 3px;
+  	width: 9em;
+}*/
 
 a.bttnLink button.bttnPage{
 	text-decoration: none;
-	color: #1A1A1A;
+	color: #dedede;
 	font-weight: bold;
 }
 
 a.bttnLink button.bttnPage:hover{
 	text-decoration: none;
-	color: #00BBFF;
+	color: #ffffff;
 	font-weight: bold;
 }

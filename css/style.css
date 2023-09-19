@@ -54,7 +54,7 @@ div#bttnR {
   justify-content: center;
 }
 
-button.bttnPage {
+/*button.bttnPage {
   background-color: #0096CC;
   border-radius: 50px;
   border: 3px solid #0096CC;
@@ -85,7 +85,7 @@ a.bttnLink button.bttnPage {
 
 a.bttnLink button.bttnPage:hover {
   color: #00BBFF;
-}
+}*/
 
 @media only screen and (max-width: 300px) {
   button.bttnPage {

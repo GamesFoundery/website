@@ -2,6 +2,7 @@
 	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bannerImhotep.jpg);
+	bac
 	background-size: cover;
   	background-position: center;
   	background-repeat: no-repeat;
@@ -55,7 +56,7 @@
 	background-size: cover;
   	background-position: center;
   	background-repeat: no-repeat;
-	text-align: right; !important;
+	text-align: center; !important;
 	margin-top: 10px;
 	width: 100%;
 }
