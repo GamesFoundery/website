@@ -8,14 +8,14 @@
 	<link rel="icon" type="x-icon" href="img/website_icon.png">
 	<title>Jules Baud Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/navstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/socialsstyle.css">
 	<link rel="stylesheet" type="text/css" href="css/classicbttnstyle.css">
 </head>
 <!-- Hello hello, just a little test to see if that works -->
 <body>
 	<div id="home">
-		<div id="header">
+		<!-- <div id="header">
 			<div class="icon" onclick="toggleMenu()"></div>
 			<div id="header-left">
 				<nav class="navBar">
@@ -35,7 +35,7 @@
 			</div>
 
 			<div id="header-logo">
-				<img class="logoSite" src="img/logo_jules.png">
+				<img class="logoSite" src="img/logo_jules_big.png">
 			</div>
 
 			<div id="header-right">
@@ -54,7 +54,40 @@
 					</ul>
 				</nav>			
 			</div>
-		</div>
+		</div> -->
+		<header>
+			<a href="#" class="logo"><img src="img/logo_jules_big.png" class="logoSite"></a>
+			<div class="menuToggle"></div>
+			<nav class="navLink">
+				<ul>
+					<li><a href="#" class="actualPage">HOME</a></li>
+					<li><a href="portfolio.html">PORTFOLIO <b>▾</b></a>
+						<ul>
+							<li><a href="portfolio/imhotep.html">Imhotep Project</a></li>
+							<li><a href="portfolio/materials.html">Materials</a></li>
+							<li><a href="portfolio/enviros.html">Environments</a></li>
+							<li><a href="portfolio/others.html">Others</a></li>
+						</ul>
+					</li>
+					<li><a href="games.html">GAMES <b>▾</b></a>
+						<ul>
+							<li><a href="games/naukar.html">Naukar</a></li>
+							<li><a href="games/ligne13.html">Ligne 13</a></li>
+							<li><a href="games/unchained.html">Unchained</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT</a></li>
+				
+				</ul>
+			</nav>
+		</header>
+		<script type="text/javascript">
+			let menuToggle = document.querySelector('.menuToggle');
+			let header = document.querySelector('header');
+			menuToggle.onclick = function(){
+				header.classList.toggle('active')
+			} 
+		</script>
 
 		<div id="core">
 			<div id="texts">
