@@ -108,6 +108,18 @@ header ul li ul li{
 	width: 100%;	
 }
 
+div#footer{
+	text-align: center !important;
+	color: #DEDEDE;
+	font-size: 1.5vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vh;
+}
+
+p.copyright{
+}
+
 @media (max-width: 900px){
 
 
@@ -190,4 +202,17 @@ header ul li ul li{
         margin-left: -100%;
         transition: all 0.2s ease;
     }
+
+    div#footer{
+		font-size: 1.5vw;
+		margin-top: 5vh;
+	}
+}
+
+@media (max-width: 600px){
+	div#footer{
+		transition: all ease 0.5s;
+		font-size: 1.5vw;
+		margin-top: 5vh;
+	}
 }

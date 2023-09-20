@@ -8,13 +8,13 @@
 	<link rel="icon" type="x-icon" href="img/website_icon.png">
 	<title>Jules Baud Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/contactstyle.css">
-	<link rel="stylesheet" type="text/css" href="css/navstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/socialsstyle.css">
 	<link rel="stylesheet" type="text/css" href="css/classicbttnstyle.css">
 </head>
 <body>
 	<div id="page">
-		<div id="header">
+		<!-- <div id="header">
 			<div id="header-left">
 				<nav class="navBar">
 					<ul>
@@ -52,7 +52,40 @@
 					</ul>
 				</nav>			
 			</div>
-		</div>
+		</div> -->
+		<header>
+			<a href="home.html" class="logo"><img src="img/logo_jules_big.png" class="logoSite"></a>
+			<div class="menuToggle"></div>
+			<nav class="navLink">
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="portfolio.html">PORTFOLIO <b>▾</b></a>
+						<ul>
+							<li><a href="portfolio/imhotep.html">Imhotep Project</a></li>
+							<li><a href="portfolio/materials.html">Materials</a></li>
+							<li><a href="portfolio/enviros.html">Environments</a></li>
+							<li><a href="portfolio/others.html">Others</a></li>
+						</ul>
+					</li>
+					<li><a href="games.html">GAMES <b>▾</b></a>
+						<ul>
+							<li><a href="games/naukar.html">Naukar</a></li>
+							<li><a href="games/ligne13.html">Ligne 13</a></li>
+							<li><a href="games/unchained.html">Unchained</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="actualPage">CONTACT</a></li>
+				
+				</ul>
+			</nav>
+		</header>
+		<script type="text/javascript">
+			let menuToggle = document.querySelector('.menuToggle');
+			let header = document.querySelector('header');
+			menuToggle.onclick = function(){
+				header.classList.toggle('active')
+			} 
+		</script>
 		<div id="core">
 			<div id="contactBox">
 				<div class="leftBox">
@@ -120,8 +153,8 @@
 						<form class="contactForm" form action="https://formsubmit.co/48db1c10c695cd0e734d3c5407abbb88" method="POST" target="_blank">
 							<input type="text" name="firstName" class="name" placeholder="First Name" required>
 							<input type="text" name="lastName" class="name" placeholder="Last Name" required>
-							<input type="email" name="email" class="email" placeholder="email@email-exemple.com" required>
-							<textarea type="text" name="message" class="message" placeholder="Can you produce an AAA PBR material of Metal" required></textarea>
+							<input type="email" name="email" class="email" placeholder="abcd@efgh-lorem.com" required>
+							<textarea type="text" name="message" class="message" placeholder="Can you produce an AAA PBR material of Metal for me ?" required></textarea>
 							<input type="submit" name="submit" class="submitBttn" value="Send Form">
 						</form>							
 					</div>				

@@ -41,27 +41,6 @@ button.bttnPage:hover{
 	filter: blur(0px);
 }
 
-/*button.bttnPage::before{
-	content: '';
- 	width: 0;
- 	height: 3em;
- 	border-radius: 30em;
- 	position: absolute;
- 	top: 0;
- 	left: 0;
- 	background-image: linear-gradient(to right, #0fd850 0%, #f9f047 100%);
- 	transition: .5s ease;
- 	display: block;
- 	z-index: -1;
-}
-
-button.bttnPage:hover::before{
-	/*background-color: transparent;
-  	border: 3px solid #00BBFF;*/
-  	letter-spacing: 3px;
-  	width: 9em;
-}*/
-
 a.bttnLink button.bttnPage{
 	text-decoration: none;
 	color: #dedede;
@@ -72,4 +51,24 @@ a.bttnLink button.bttnPage:hover{
 	text-decoration: none;
 	color: #ffffff;
 	font-weight: bold;
+}
+
+@media (max-width: 900px){
+	button.bttnPage{
+		font-size: 16px;
+		z-index: 1;
+		font-weight: normal;
+		padding: 10px 30px;
+		transition: ease 0.5s;
+	}
+}
+
+@media (max-width: 600px){
+	button.bttnPage{
+		font-size: 12px;
+		z-index: 1;
+		font-weight: normal;
+		padding: 10px 20px;
+		transition: ease 0.5s;
+	}
 }

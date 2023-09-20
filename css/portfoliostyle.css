@@ -1,81 +1,114 @@
-#imhotep{
-	height: 70vh;
-	border-radius: 50px;
-	background-image: url(../img/bannerImhotep.jpg);
-	bac
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-	text-align: center !important;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 100%;
+body{
+	background-color: #1a1a1a;
 }
 
-#imhotep:hover{
-	transform: scale(0.99);
+#core{
+	padding-top: 15vh;
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+}
+
+#imhotep, #materials, #others, #environments{
+	height: 80vh;
+	border-radius: 50px;	
+	background-size: cover;
+  	background-position: center;
+  	background-repeat: no-repeat;	
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 98%;
+}
+
+#imhotep{
+	background-image: url(../img/bannerImhotep.jpg);
+	text-align: center !important;
 }
 
 #materials{
-	height: 70vh;
-	border-radius: 50px;
 	background-image: url(../img/bannerMaterials.jpg);
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
-	text-align: left; !important;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 100%;
-}
-
-#materials:hover{
-	transform: scale(0.99);
+	text-align: left !important;
 }
 
 #others{
-	height: 70vh;
-	border-radius: 50px;
 	background-image: url(../img/bannerOthers.jpg);
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
 	text-align: right; !important;
-	margin-top: 10px;
-	width: 100%;
-}
-
-#others:hover{
-	transform: scale(0.99);
 }
 
 #environments{
-	height: 70vh;
-	border-radius: 50px;
 	background-image: url(../img/bannerImhotep.jpg);
-	background-size: cover;
-  	background-position: center;
-  	background-repeat: no-repeat;
 	text-align: center; !important;
-	margin-top: 10px;
-	width: 100%;
 }
 
-#environments:hover{
-	transform: scale(0.99);
+.button{
+	padding-top: 5vh;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	padding-bottom: 5vh;
 }
 
 img.logoImhotep{
-	padding-top: 5vh;
+	padding-top: 2vh;
 	width: 50vw;
 }
 
 h1.name{
 	font-size: 7vw;
 	color: rgba(222,222,222,1);
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding: 5vh;
+	padding-top: 2vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+.paragraph{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p.explanation{
+	font-size: 2.4vw;
+	color: #DEDEDE;
+	text-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+	text-align: justify;
+}
+
+@media (max-width: 900px){
+	#imhotep, #materials, #others, #environments{
+		height: 40vh;
+		margin-bottom: 0.05vh;
+	}
+	.button{
+		padding-top: 2vh;
+  		padding-bottom: 2vh;
+	}
+
+	h1.name{
+		padding-top: 2vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+	p.explanation{
+		transition: ease 0.5s;
+		font-size: 2.2vw;
+	}
+}
+
+@media (max-width: 600px){
+	#imhotep, #materials, #others, #environments{
+		height: 30vh;
+		margin-bottom: 0.05vh;
+	}
+	.button{
+		padding-top: 2vh;
+  		padding-bottom: 2vh;
+	}
+	p.explanation{
+		transition: ease 0.5s;
+		font-size: 2.2vw;
+	}
 }
 
 

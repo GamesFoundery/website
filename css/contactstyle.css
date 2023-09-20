@@ -14,11 +14,16 @@ body{
 	width: 100%;
 }
 
+#core{
+	padding-top: 15vh;
+}
+
 #contactBox{
 	margin-top: 5vh;
 	width: 80%;
 	height: 90%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	display: table;
 }
 
@@ -42,8 +47,7 @@ div.leftBox{
 
 div.leftBox:hover{
 	transition: 0.5s;
-	filter: blur(0px);
-	transform: scale(1.005);
+	backdrop-filter: blur(8px);
 }
 
 div.rightBox{
@@ -54,12 +58,9 @@ div.rightBox{
 	border-top-right-radius: 45px;
 	border-bottom-right-radius: 45px;
 	float: right;
-}
-
-div.rightBox:hover{
-	transition: 0.5s;
-	filter: blur(0px);
-	transform: scale(1.005);
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
 }
 
 h2.titleDark{
@@ -85,7 +86,7 @@ h3.coordsTitle{
 
 hr.separatorDark{
 	color: #1A1A1A;
-	width: 55%;
+	width: 100%;
 }
 
 hr.separatorLight{
@@ -112,11 +113,12 @@ hr.coordsSeparator{
 }
 
 
-.name, .email, .message, .submitBttn{
+input.name, 
+input.email, 
+textarea.message, 
+input.submitBttn{
 	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-	/*border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	border-top: 1px solid rgba(255, 255, 255, 0.1);*/
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 30px;
 	padding: 10px 40px;
@@ -133,11 +135,12 @@ hr.coordsSeparator{
 
 .name{
 	width: 34%;
-	margin-right: 1vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .email, .message{
-	width: 85%;
+	width: 84%;
 	float: left;
 }
 
@@ -149,12 +152,12 @@ hr.coordsSeparator{
 	overflow: auto;
 }
 
-.name, .email, .message, .submitBttn:hover{
-	letter-spacing: 3px;
+.name:hover, .email:hover, .message:hover, .submitBttn:hover{
+	letter-spacing: 1px;
 	color: #fff;
 	transition: 0.5s;
 	filter: blur(0px);
-	font-weight: bold;
+	backdrop-filter: blur(8px);
 
 }
 

@@ -8,105 +8,81 @@
 	<link rel="icon" type="x-icon" href="img/website_icon.png">
 	<title>Jules Baud Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/portfoliostyle.css">
-	<link rel="stylesheet" type="text/css" href="css/navstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/gotopbttnstyle.css">
-	<link rel="stylesheet" type="text/css" href="css/portfolionavstyle.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/portfolionavstyle.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/classicbttnstyle.css">
 	<script src="https://kit.fontawesome.com/121f1df461.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div id="portfolio">
-		<div id="header">
-			<div id="header-left">
-				<nav class="navBar">
-					<ul>
-						<li class="navBttn">
-							<a class="navLink" href="home.html">
-								HOME
-							</a>
-						</li>
-						<li class="navBttn">
-							<a class="navLink"href="contact.html">
-								CONTACT
-							</a>
-						</li>				
-					</ul>
-				</nav>			
-			</div>
-
-			<div id="header-logo">
-				<img class="logoSite" src="img/logo_jules_big.png">
-			</div>
-
-			<div id="header-right">
-				<nav class="navBar">
-					<ul>
-						<li class="navBttn">
-							<a class="navLinkActual" href="#">
-								PORTFOLIO
-							</a>
-						</li>
-						<li class="navBttn">
-							<a class="navLink" href="games.html">
-								GAMES PROJECTS
-							</a>
-						</li>			
-					</ul>
-				</nav>			
-			</div>
-		</div>
+		<header>
+			<a href="home.html" class="logo"><img src="img/logo_jules_big.png" class="logoSite"></a>
+			<div class="menuToggle"></div>
+			<nav class="navLink">
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="#" class="actualPage">PORTFOLIO <b>▾</b></a>
+						<ul>
+							<li><a href="portfolio/imhotep.html">Imhotep Project</a></li>
+							<li><a href="portfolio/materials.html">Materials</a></li>
+							<li><a href="portfolio/enviros.html">Environments</a></li>
+							<li><a href="portfolio/others.html">Others</a></li>
+						</ul>
+					</li>
+					<li><a href="games.html">GAMES <b>▾</b></a>
+						<ul>
+							<li><a href="games/naukar.html">Naukar</a></li>
+							<li><a href="games/ligne13.html">Ligne 13</a></li>
+							<li><a href="games/unchained.html">Unchained</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT</a></li>
+				
+				</ul>
+			</nav>
+		</header>
+		<script type="text/javascript">
+			let menuToggle = document.querySelector('.menuToggle');
+			let header = document.querySelector('header');
+			menuToggle.onclick = function(){
+				header.classList.toggle('active')
+			} 
+		</script>
 		<a class="goTopBttn" href="#">
 			<i class="fa-solid fa-angle-up fa-2xl" style="color: #dedede;"></i>
 		</a>
 		<div id="core">
-			<div id="portfolioNavBar">
-				<nav class="navBar">
-					<ul>
-						<li class="portfolioNavBttn">
-							<a class="portfolioNavLink" href="portfolio/imhotep.html">
-								IMHOTEP PROJECT
-							</a>
-						</li>
-						<li class="portfolioNavBttn">
-							<a class="portfolioNavLink"href="portfolio/materials.html">
-								MATERIALS
-							</a>
-						</li>
-						<li class="portfolioNavBttn">
-							<a class="portfolioNavLink"href="portfolio/others.html">
-								OTHERS
-							</a>
-						</li>
-						<li class="portfolioNavBttn">
-							<a class="portfolioNavLink"href="portfolio/enviros.html">
-								ENVIRONMENTS
-							</a>
-						</li>					
-					</ul>
-				</nav>
-			</div>
-
 			<div id="imhotep">
 				<img class="logoImhotep" src="img/logoImhotep.png">
-				<div id="button">
+				<div class="button">
 					<a href="portfolio/imhotep.html" class="bttnLink">
 						<button class="bttnPage">
 							IMHOTEP PROJECT
 						</button>
 					</a>
-				</div>				
+				</div>
+				<div class="paragraph">
+					<p class="explanation">The Imhotep Project is a 3D Environment Art project designed as a graduation artwork. The original idea behind Imhotep was to explore Ancient Egyptian history and their glorious builder's past that allowed the production of a set of buildings amongst the most marvellous architecture wonders of the world. I hope you'll like this project as much as I enjoyed creating it.  
+					</p>	
+				</div>
+							
 			</div>
 
 			<div id="materials">
 				<h1 class="name">
 					MATERIALS
 				</h1>
-				<div id="button">
+				<div class="button">
 					<a href="portfolio/materials.html" class="bttnLink">
 						<button class="bttnPage">
 							MATERIALS
 						</button>
 					</a>
+				</div>
+				<div class="paragraph">
+					<p class="explanation">In this gallery you can see my latest PBR (Physically Based Rendering) Materials projects which are created with the Substance Suite and most of all Substance 3D Designer. This software allows users to achieve realistic results. I really felt in love with this software and its way of working with nodes. You'll see several different textures types. 
+					</p>	
 				</div>
 			</div>
 
@@ -114,7 +90,7 @@
 				<h1 class="name">
 					OTHERS
 				</h1>
-				<div id="button">
+				<div class="button">
 					<a href="portfolio/others.html" class="bttnLink">
 						<button class="bttnPage">
 							OTHERS
@@ -127,7 +103,7 @@
 				<h1 class="name">
 					ENVIRONMENTS
 				</h1>
-				<div id="button">
+				<div class="button">
 					<a href="portfolio/others.html" class="bttnLink">
 						<button class="bttnPage">
 							ENVIRONMENTS

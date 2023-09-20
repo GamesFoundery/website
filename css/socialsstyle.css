@@ -10,7 +10,6 @@ div#socials{
 
 ul.socialsList{
 	margin: 0;
-	padding: 50px 50px;
 	background: rgba(255, 255, 255, 0.02);
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 	/*border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -53,4 +52,15 @@ button.bttnSocials img.iconSocials:hover{
     to {
         filter: brightness(300%) hue-rotate(90deg) saturate(200%) blur(2px);
     }
+}
+
+@media (max-width: 600px){
+	ul.socialsList{
+		padding: 10px 40px;
+	}
+
+	button.bttnSocials img.iconSocials{
+		width: 5vw;
+		height: auto;
+	}
 }

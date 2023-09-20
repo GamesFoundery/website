@@ -12,7 +12,7 @@ html{
 }
 
 div#core{
-  padding-top: 20vh;
+  padding-top: 15vh;
 }
 div#texts{
 	text-align: center;
@@ -58,50 +58,16 @@ div#bttnR {
   justify-content: center;
 }
 
-/*button.bttnPage {
-  background-color: #0096CC;
-  border-radius: 50px;
-  border: 3px solid #0096CC;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.5vw;
-  margin: 2vh 2vw;
-  cursor: pointer;
-  max-width: 100%;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-button.bttnPage:hover {
-  background-color: transparent;
-  border: 3px solid #00BBFF;
-}
-
-a.bttnLink button.bttnPage {
-  text-decoration: none;
-  color: #1A1A1A;
-  font-weight: bold;
-  font-size: 2vh;
-  height: auto;
-}
-
-a.bttnLink button.bttnPage:hover {
-  color: #00BBFF;
-}*/
-
-@media only screen and (max-width: 300px) {
-  button.bttnPage {
-    font-size: 3.5vw;
-    margin: 2vh 4vw;
+@media (max-width: 600px){
+  div#core{
+    padding-top: 10vh;
+    transition: all ease 0.5s;
+  }
+  div#texts{
+    padding-bottom: 2vh;
   }
 
-  a.bttnLink button.bttnPage {
-    font-size: 4vw;
-  }
 }
-
 
 
 
