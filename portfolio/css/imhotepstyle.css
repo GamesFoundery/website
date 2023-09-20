@@ -1,3 +1,35 @@
+#core{
+	background-image: url("../../img/loaderBcg.jpg");
+	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-position: center center;
+	padding-top: 15vh;
+}
+
+header{
+	z-index: 100;
+}
+
+.firstBox{
+	width: 98%;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	padding: 10px 40px;
+	text-decoration: none;
+	overflow: hidden;
+	z-index: 1;
+	transition: 0.5s;
+	backdrop-filter: blur(2px);
+	color: #fff;
+	font-weight: normal;
+	padding-bottom: 2vh;
+}
+
 h1.title{
 	color: #DEDEDE;
 	font-size: 7vw;
@@ -10,22 +42,33 @@ h1.title{
 
 p.description{
 	color: #BABABA;
-	margin-left: 14.2vw;
-	margin-right: 14.2vw;
-	text-align: left !important;
+	text-align: justify;
 	margin-top: 0vh;
 	margin-bottom: 5vh;
 	font-size: 3vh;
 }
 
-p.paragraph{
-	color: #BABABA;
-	margin-left: 2vw;
-	margin-right: 10vw;
-	text-align: left !important;
-	margin-top: 3vh;
-	margin-bottom: 2vh;
-	font-size: 2vh;
+img.cover{
+	border-radius: 50px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carouselContainer{
+	padding-top: 2vh;
+}
+
+.carousel{
+	overflow: hidden;
+}
+
+.carousel figure{
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
 }
 
 img.images{
@@ -41,7 +84,7 @@ div#buttons{
 	display: inline-block;
 	padding-top: 5vh;
 }
-button.bttnPage{
+/*button.bttnPage{
 	background-color: #0096CC;
 	border-radius: 50px;
   	border: 3px solid #0096CC;
@@ -79,5 +122,5 @@ a.bttnLink button.bttnPage:hover{
 	text-decoration: none;
 	color: #00BBFF;
 	font-weight: bold;
-}
+}*/
 

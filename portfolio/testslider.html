@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test carousel</title>
+</head>
+<style type="text/css">
+	#slider{
+		overflow: hidden;
+	}
+	#slider figure{
+		position: relative;
+		width: 500%;
+		margin: 0;
+		left: 0;
+		animation: 20s slider infinite;
+	}
+	#slider figure img, video{
+		width: 20%;
+		float: left;
+	}
+	@keyframes slider{
+		0%{
+			left: 0;
+		}
+		20%{
+			left: 0;
+		}
+		25%{
+			left: -100%;
+		}
+		45%{
+			left: -100%;
+		}
+		50%{
+			left: -200%;
+		}
+		70%{
+			left: -200%;
+		}
+		75%{
+			left: -300%;
+		}
+		95%{
+			left: -300%;
+		}
+		100%{
+			left: -400%;
+		}
+	}
+</style>
+<body>
+	<div id="slider">
+		<figure>
+			<img src="img/imhotep/001.jpg">
+			<video class="images" src="img/imhotep/002.mp4" autoplay controls></video>
+			<img src="img/imhotep/004.jpg">
+			<img src="img/imhotep/005.jpg">
+			<img src="img/imhotep/006.jpg">
+		</figure>
+	</div>
+</body>
+</html>

@@ -2,52 +2,43 @@ html{
 	background-color: #1A1A1A;
 }
 
-#naukar{
+#core{
+	padding-top: 15vh;
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+}
+
+#naukar, #ligne13, #unchained{
 	height: 70vh;
 	border-radius: 50px;
 	background-image: url(../img/bgNaukar.jpg);
 	text-align: center !important;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	background-position: right !important;
-	width: 100%;
+	background-position: center; !important;
+	width: 98%;
+}
+
+#naukar{
+	background-image: url(../img/bgNaukar.jpg);
 }
 
 #ligne13{
-	height: 70vh;
-	border-radius: 50px;
 	background-image: url(../img/bgL13.jpg);
-	text-align: center !important;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-position: center !important;
-	width: 100%;
 }
 
 #unchained{
-	height: 70vh;
-	border-radius: 50px;
 	background-image: url(../img/bgUnchainedHD.jpg);
-	text-align: center !important;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	background-position: right !important;
-	width: 100%;
 }
 
-#naukar:hover{
-	transition: all 0.2s;
-	transform: scale(0.99);
-}
-
-#ligne13:hover{
-	transition: all 0.2s;
-	transform: scale(0.99);
-}
-
-#unchained:hover{
-	transition: all 0.2s;
-	transform: scale(0.99);
+.button{
+	padding-top: 5vh;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	padding-bottom: 5vh;
 }
 
 img.logoGame{
@@ -55,5 +46,32 @@ img.logoGame{
 	width: 40vw;
 }
 
+@media (max-width: 900px){
+	#naukar, #ligne13, #unchained{
+		height: 40vh;
+		margin-bottom: 0.05vh;
+	}
+	.button{
+		padding-top: 5vh;
+  		padding-bottom: 2vh;
+	}
+	img.logoGame{
+		padding-top: 5vh;
+		width: 40vw;
+	}
+}
 
-
+@media (max-width: 600px){
+	#naukar, #ligne13, #unchained{
+		height: 30vh;
+		margin-bottom: 0.05vh;
+	}
+	.button{
+		padding-top: 5vh;
+  		padding-bottom: 2vh;
+	}
+	img.logoGame{
+		padding-top: 5vh;
+		width: 40vw;
+	}
+}
