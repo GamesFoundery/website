@@ -54,6 +54,18 @@ button.bttnSocials img.iconSocials:hover{
     }
 }
 
+@media (max-width: 900px){
+	ul.socialsList{
+		padding: 10px 40px;
+	}
+
+	button.bttnSocials img.iconSocials{
+		width: 5vw;
+		height: auto;
+	}
+}
+
+
 @media (max-width: 600px){
 	ul.socialsList{
 		padding: 10px 40px;

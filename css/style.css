@@ -12,7 +12,24 @@ html{
 }
 
 div#core{
-  padding-top: 15vh;
+  padding-top: 12vh;
+}
+
+div#box{
+  height: 85vh;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 60px;
+  backdrop-filter: blur(2px);
+  padding-bottom: 3vh;
+}
+
+header{
+  z-index: 50;
 }
 div#texts{
 	text-align: center;
@@ -58,15 +75,48 @@ div#bttnR {
   justify-content: center;
 }
 
-@media (max-width: 600px){
+div#footer{
+  padding-top: 2vh;
+}
+
+@media (max-width: 996px){
   div#core{
-    padding-top: 10vh;
+    padding-top: 15vh;
+  }
+  div#box{
     transition: all ease 0.5s;
+    height: 80vh;
   }
   div#texts{
-    padding-bottom: 2vh;
+    padding-bottom: 7vh;
   }
+  div#buttons{
+    padding-bottom: 5vh;
+  }
+  div#footer{
+    padding-top: 15vh;
+  }
+}
 
+@media (max-width: 600px){
+  div#core{
+    padding-top: 15vh;
+  }
+  div#box{
+    width: 90%;
+    border-radius: 60px;
+    transition: all ease 0.5s;
+    height: 80vh;
+  }
+  div#texts{
+    padding-bottom: 7vh;
+  }
+  div#buttons{
+    padding-bottom: 5vh;
+  }
+  div#footer{
+    padding-top: 20vh;
+  }
 }
 
 
