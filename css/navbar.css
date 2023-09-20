@@ -196,15 +196,17 @@ p.copyright{
     }
 
     div#footer{
-		font-size: 1.5vw;
-		margin-top: 5vh;
+    	width: 90%;
+		font-size: 3vw;
+		margin-top: 1vh;
 	}
 }
 
 @media (max-width: 600px){
 	div#footer{
+		width: 90%;
 		transition: all ease 0.5s;
-		font-size: 1.5vw;
-		margin-top: 5vh;
+		font-size: 3vw;
+		margin-top: 1vh;
 	}
 }
