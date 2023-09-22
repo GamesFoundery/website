@@ -12,8 +12,6 @@ ul.socialsList{
 	margin: 0;
 	background: rgba(255, 255, 255, 0.02);
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-	/*border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	border-top: 1px solid rgba(255, 255, 255, 0.1);*/
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 60px;
 	padding: 10px 40px;
@@ -23,7 +21,7 @@ ul.socialsList{
 	font-size: 24px;
 	z-index: 1;
 	transition: 0.5s;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(10px);
 	color: #fff;
 }
 

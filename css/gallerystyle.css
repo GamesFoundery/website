@@ -1,11 +1,10 @@
-body{
+/*body{
 	overflow: hidden;
-}
+}*/
 .container{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 	width: 98%;
 	height: 90vh;
 	padding: 20px;
@@ -13,14 +12,14 @@ body{
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 30px;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(2px);
 }
 
 h2.name{
 	color: #dedede;
 	text-align: center;
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 7vh;
 	padding-bottom: 20px;
 }
 
@@ -76,7 +75,7 @@ h2.name{
 .item:nth-child(n+6){
 	top: 92%;
 	left: calc(50% + 260px);
-	opacity: 5%;
+	opacity: 100%;
 	box-shadow: none;
 	z-index: 1;
 }
@@ -175,4 +174,3 @@ h2.name{
 .buttons button:hover{
 	transform: scale(1.1);
 }
-

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/imhotepstyle.css">
 	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/gotopbttnstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/gallerystyle.css">
 	<link rel="stylesheet" type="text/css" href="../css/classicbttnstyle.css">
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<script src="https://kit.fontawesome.com/121f1df461.js" crossorigin="anonymous"></script>
@@ -73,36 +74,47 @@
 						</a>
 					</div>
 				</div>
-				<div class="carouselContainer">
-					<h3 class="title">MEDIAS</h3>
-					<div class="carousel">
-						<figure>
-							<img class="images" src="img/imhotep/001.jpg">
-							<video class="images" src="img/imhotep/002.mp4" autoplay controls></video>
-							<img class="images" src="img/imhotep/003.jpg">
-							<img class="images" src="img/imhotep/004.jpg">
-							<img class="images" src="img/imhotep/005.jpg">
-							<img class="images" src="img/imhotep/006.jpg">
-							<img class="images" src="img/imhotep/007.jpg">
-							<img class="images" src="img/imhotep/008.jpg">
-							<video class="images" src="img/imhotep/009.mp4" autoplay controls></video>
-							<img class="images" src="img/imhotep/010.jpg">
-							<img class="images" src="img/imhotep/011.jpg">
-							<video class="images" src="img/imhotep/012.mp4" autoplay controls></video>
-							<video class="images" src="img/imhotep/013.mp4" autoplay controls></video>
-							<img class="images" src="img/imhotep/014.jpg">
-							<img class="images" src="img/imhotep/015.jpg">
-							<img class="images" src="img/imhotep/001.jpg">
-						</figure>
-						
+				<div class="secondBox">
+					<div class="container">
+						<h2 class="name">GALLERY</h2>
+						<div id="slide">
+							<div class="item" style="background-image: url(img/imhotep/001.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/003.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/004.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/005.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/006.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/007.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/008.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/010.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/011.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/014.jpg);"></div>
+							<div class="item" style="background-image: url(img/imhotep/015.jpg);"></div>
+						</div>
+						<div class="buttons">
+							<button id="prev"><i class="fa-solid fa-chevron-left" style="color: #dedede"></i></button>
+						<button id="next"><i class="fa-solid fa-chevron-right" style="color: #dedede"></i></button>
+						</div>
 					</div>
-				</div>			
+				</div>
+				
+			<script type="text/javascript">
+				document.getElementById('next').onclick = function(){
+    				let lists = document.querySelectorAll('.item');
+    				document.getElementById('slide').appendChild(lists[0]);
+				}
+				document.getElementById('prev').onclick = function(){
+    				let lists = document.querySelectorAll('.item');
+    				document.getElementById('slide').prepend(lists[lists.length - 1]);
+				}
+  
+			</script>		
 				
 			</div>
+			<div id="footer">
+				<p class="copyright">
+					&copy Jules Baud Portfolio Copyright 2022 - 2023 | All rights reserved | Website powered by HTML & CSS coding &copy
+				</p>
+			</div>
 		</div>
-		<div id="footer">
-			<p class="copyright">
-				&copy Jules Baud Portfolio Copyright 2022 - 2023 | All rights reserved | Website powered by HTML & CSS coding &copy
-			</p>
-		</div>
+		
 	</div>
