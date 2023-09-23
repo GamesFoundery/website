@@ -1,3 +1,11 @@
+body{
+    background-color: #1a1a1a;
+}
+
+#core{
+    padding-top: 12vh;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +20,7 @@
 .gallery img {
     width: 100%;
     height: auto;
+    border-radius: 30px;
 }
 
     /* Responsive Styles */
@@ -21,15 +30,15 @@
     }
 }
 
-/*@media (min-width: 1024px) {
+@media (min-width: 1024px) {
     .gallery a {
-        flex-basis: calc(33.3333% - 10px); /* Three columns with a small gap between them */
+        flex-basis: calc(33.3333% - 10px);
     }
 }
 
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .gallery a {
-    	flex-basis: calc(25% - 15px); /* Four columns with a small gap between them */
+    	flex-basis: calc(25% - 15px);
     }
 }
 

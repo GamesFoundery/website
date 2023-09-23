@@ -26,6 +26,11 @@ header{
 	padding-bottom: 15vh;
 }
 
+.menuToggle #bars,
+#cross{
+	opacity: 0;
+}
+
 header .logoSite{
 	height: 8vh;
 	z-index: 1000;
@@ -115,7 +120,10 @@ p.copyright{
 
 @media (max-width: 996px){
 
-
+	.menuToggle #bars,
+	#cross{
+		opacity: 1;
+	}
 	html{
 		backdrop-filter: blur(15px);
 	}
