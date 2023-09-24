@@ -7,6 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         logo.style.animation = "fade-in 2s forwards"; // Lancer l'animation de fondu
         setTimeout(function() {
             window.location.href = 'home.html';
-        }, 2000); // Attendre 2 secondes (temps d'apparition du logo)
-    }, 2000); // Attendre 2 secondes (temps d'apparition du logo)
+        }, 1000); // Attendre 2 secondes (temps d'apparition du logo)
+    }, 1000); // Attendre 2 secondes (temps d'apparition du logo)
 });

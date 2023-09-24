@@ -16,46 +16,50 @@
 </head>
 <body>
 	<div id="materials">
-		<header>
-			<a href="#" class="logo"><img src="../img/logo_jules_big.png" class="logoSite"></a>
-			<div class="menuToggle">
-				<i class="fa-solid fa-bars fa-lg" style="color: #dedede" id="bars"></i>
-				<i class="fa-solid fa-xmark fa-xl" style="color: #dedede" id="cross"></i>
-			</div>
-			<nav class="navLink">
-				<ul>
-					<li><a href="../home.html">HOME</a></li>
-					<li><a href="../portfolio.html">PORTFOLIO <b>▾</b></a>
-						<ul>
-							<li><a href="imhotep.html">Imhotep Project</a></li>
-							<li><a href="materials.html">Materials</a></li>
-							<!-- <li><a href="enviros.html">Environments</a></li> -->
-							<li><a href="#" class="actualPage">Others</a></li>
-						</ul>
-					</li>
-					<li><a href="../games.html">GAMES <b>▾</b></a>
-						<ul>
-							<li><a href="../games/naukar.html">Naukar</a></li>
-							<li><a href="../games/ligne13.html">Ligne 13</a></li>
-							<li><a href="../games/unchained.html">Unchained</a></li>
-						</ul>
-					</li>
-					<li><a href="../contact.html">CONTACT</a></li>
+		<div id="navBar">
+			<header>
+				<nav>
+					<div class="logo">
+						<img src="../img/logo_jules_big.png">
+					</div>
+					<div class="bttn">
+						<div class="toggle">
+							<i class="fa-solid fa-bars fa-lg ouvrir" style="color: #dedede" id="bars"></i>
+							<i class="fa-solid fa-xmark fa-xl fermer" style="color: #dedede" id="cross"></i>
+						</div>
+					</div>
+			
+					<ul class="menu">
+						<li><a href="../home.html">HOME</a></li>
+						<li><a href="../portfolio.html">PORTFOLIO <b>▾</b></a>
+							<ul class="submenu">
+								<li><a href="imhotep.html">Imhotep Project</a></li>
+								<li><a href="materials.html">Materials</</li>
+								<!-- <li><a href="enviros.html">Environments</a></li> -->
+								<li><a href="#" class="actualPage">Others</a></li>
+							</ul>
+						</li>
+						<li><a href="../games.html">GAMES <b>▾</b></a>
+							<ul class="submenu">
+								<li><a href="../games/naukar.html">Naukar</a></li>
+								<li><a href="../games/ligne13.html">Ligne 13</a></li>
+								<li><a href="../games/unchained.html">Unchained</a></li>
+							</ul>
+						</li>
+						<li><a href="../contact.html">CONTACT</a></li>
 				
-				</ul>
-			</nav>
-		</header>
-		<script type="text/javascript">
-			let menuToggle = document.querySelector('.menuToggle');
-			let header = document.querySelector('header');
+					</ul>
+				</nav>
+			</header>
+			<script type="text/javascript">
+				let toggle = document.querySelector('.toggle');
+				let body = document.querySelector('body');
 
-			menuToggle.onclick = function() {
-    			header.classList.toggle('active');
-    			document.querySelector('#bars').classList.toggle('hidden');
-    			document.querySelector('#cross').classList.toggle('hidden');
-			}				
-		
-		</script>
+				toggle.addEventListener('click', function(){
+					body.classList.toggle('open');
+				})	
+			</script>
+		</div>
 		<a class="goTopBttn" href="#">
 			<i class="fa-solid fa-angle-up fa-2xl" style="color: #dedede;"></i>
 		</a>
