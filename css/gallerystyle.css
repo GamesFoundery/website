@@ -51,9 +51,9 @@ h2.name{
 .item:nth-child(2){
 	border-radius: 20px;
 	background-position: center;
-	background-size: 100%;
-	width: 63%;
-	height: 70%;
+	background-size: cover;
+	width: 960px;
+	height: 540px;
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 

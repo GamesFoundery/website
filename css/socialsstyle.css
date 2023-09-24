@@ -1,15 +1,17 @@
 div#socials{
-	display: flex;
+	display: block;
 	text-align: center !important;
 	margin-bottom: 2vh;
 	margin-top: 5vh;
-	padding-inline: 20px;
-	justify-content: center;
-	align-items: center;
+	align-items: center !important;
+	justify-content: center !important;
+	float: center !important;
 }
 
 ul.socialsList{
 	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
 	background: rgba(255, 255, 255, 0.02);
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -54,23 +56,25 @@ button.bttnSocials img.iconSocials:hover{
 
 @media (max-width: 900px){
 	ul.socialsList{
-		padding: 10px 40px;
+		padding: 10px 20px;
 	}
 
 	button.bttnSocials img.iconSocials{
-		width: 8vw;
+		width: 5vw;
 		height: auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
 
 @media (max-width: 600px){
 	ul.socialsList{
-		padding: 10px 40px;
+		padding: 10px 20px;
 	}
 
 	button.bttnSocials img.iconSocials{
-		width: 12vw;
+		width: 5vw;
 		height: auto;
 	}
 }

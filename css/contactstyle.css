@@ -20,7 +20,7 @@ body{
 
 #contactBox{
 	margin-top: 5vh;
-	width: 80%;
+	width: 90%;
 	height: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -72,6 +72,7 @@ h2.titleDark{
 h2.titleLight{
 	color: #BABABA;
 	font-size: 1.5vw;
+	margin-top: 1vh;
 	margin-bottom: 1vh;
 }
 
@@ -90,26 +91,33 @@ hr.separatorDark{
 }
 
 hr.separatorLight{
-	color: #BABABA;
-	width: 40%;
+	border: 0.1vh solid #dedede;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 3vh;
+	opacity: 0.5;
 }
 
 p.coordsInfo{
 	margin: 0px;
 	color: #BABABA;
 	font-size: 1vw;
-	padding-top: 1vh;
+	padding-top: 2vh;
 	padding-left: 2vw;
 	text-align: left;
 	font-style: italic;
-	padding-bottom: 1vh;
+	padding-bottom: 2vh;
 	padding-right: 4vw;
 }
 
 hr.coordsSeparator{
 	color: #BABABA;
-	width: 82%;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.2;
 }
 
 
@@ -121,11 +129,11 @@ input.submitBttn{
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 30px;
-	padding: 10px 40px;
+	padding: 10px 15px;
 	letter-spacing: 1px;
 	text-decoration: none;
 	overflow: hidden;
-	font-size: 1em;
+	font-size: 1vw;
 	z-index: 1;
 	transition: 0.5s;
 	backdrop-filter: blur(2px);
@@ -134,13 +142,18 @@ input.submitBttn{
 }
 
 .name{
-	width: 34%;
-	margin-left: auto;
-	margin-right: auto;
+	width: 48.5%;
+}
+
+.name.first{
+	float: left;
+}
+.name.last{
+	float: right;
 }
 
 .email, .message{
-	width: 84%;
+	width: 100%;
 	float: left;
 }
 
@@ -150,6 +163,10 @@ input.submitBttn{
 	transition: all 0.2s;
 	outline: none;
 	overflow: auto;
+}
+
+.submitBttn{
+	margin-top: 5vh;
 }
 
 .name:hover, .email:hover, .message:hover, .submitBttn:hover{
@@ -181,6 +198,107 @@ input.submitBttn{
 .image-container img:hover{
 	transition:all ease-in-out 0.5s;
 	transform: scale(1.02);
+}
+
+@media (max-width: 900px){
+	#core{
+		padding-top: 8vh;
+	}
+
+	div.leftBox{
+		border-radius: 35px;
+	}
+	h2.titleLight{
+		font-size: 2.5vw;
+	}
+
+	h3.coordsTitle{
+		font-size: 1.5vw;
+	}
+	p.coordsInfo{
+		font-size: 1.2vw;
+		padding-top: 1vh;
+	}
+	input.name, 
+	input.email, 
+	textarea.message, 
+	input.submitBttn{
+		font-size: 1vw;
+	}
+
+	.submitBttn{
+		margin-top: 2vh;
+	}
+}
+
+@media (max-width: 600px){
+	#core{
+		padding-top: 8vh;
+	}
+	h2.titleLight{
+		font-size: 2.5vw;
+	}
+
+	h3.coordsTitle{
+		font-size: 1.5vw;
+	}
+	p.coordsInfo{
+		font-size: 1.5vw;
+		padding-top: 1vh;
+	}
+	input.name, 
+	input.email, 
+	textarea.message, 
+	input.submitBttn{
+		font-size: 1.5vw;
+	}
+
+	.submitBttn{
+		margin-top: 2vh;
+	}
+
+	.image-container{
+		display: block;
+		direction: column;
+		padding-top: 2vh;
+	}
+
+	.image-container img {
+		width: 90%; /* 50% minus margin on both sides */
+		margin-bottom: 5vh;
+	}
+}
+
+@media (max-width: 400px){
+	#core{
+		padding-top: 8vh;
+	}
+	h2.titleLight{
+		font-size: 2.5vw;
+	}
+
+	h3.coordsTitle{
+		font-size: 1.5vw;
+	}
+	p.coordsInfo{
+		font-size: 1.5vw;
+		padding-top: 1vh;
+	}
+	input.name, 
+	input.email, 
+	textarea.message, 
+	input.submitBttn{
+		font-size: 1.5vw;
+	}
+
+	.submitBttn{
+		margin-top: 1vh;
+	}
+
+	.image-container img {
+		width: 90%; /* 50% minus margin on both sides */
+		margin-bottom: 2vh;
+	}
 }
 
 
