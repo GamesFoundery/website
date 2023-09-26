@@ -9,10 +9,10 @@
 	<title>Jules Baud Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/marblestyle.css">
 	<link rel="stylesheet" type="text/css" href="../../css/navbar.css">
-	<link rel="stylesheet" type="text/css" href="../../css/portfolionavstyle.css">
 	<link rel="stylesheet" type="text/css" href="../../css/gotopbttnstyle.css">
 	<link rel="stylesheet" type="text/css" href="../../css/materialspagesstyle.css">
 	<link rel="stylesheet" type="text/css" href="../../css/classicbttnstyle.css">
+	<link rel="stylesheet" type="text/css" href="../../css/gallerystyle.css">
 	<script src="https://kit.fontawesome.com/121f1df461.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -72,8 +72,7 @@
 				<p class="description">
 					Recently I worked on this material which is a green italian marble. I decided to add some gold in the marble veins to make it more precious. All the texturing work was done on Substance Designer, as well as lighting, rendering, turnaround. Only composition was done in Photoshop
 				</p>
-				<hr class="separator">
-				<div id="imagesFullScreen">
+				<!-- <div id="imagesFullScreen">
 					<img src="img/marble/beauty01.jpg" class="fullScreen">
 					<img src="img/marble/beauty03.jpg" class="fullScreen">
 					<img src="img/marble/breakdown01.jpg" class="fullScreen">
@@ -83,9 +82,9 @@
 				<div id="squareImages">
 					<img src="img/marble/breakdown02.gif" class="square">
 					<video class="square" src="img/marble/video.mp4" controls autoplay></video>
-				</div>
+				</div> -->
 
-				<div id="matsNavigation">
+				<!-- <div id="matsNavigation">
 					<div class="previous">
 						<h3 class="navTitle">
 							HERRINGBONE WOOD
@@ -110,10 +109,36 @@
 							</a>
 						</div>
 					</div>
-				</div>
-
-
+				</div> -->
 			</div>
+			<div class="container">
+				<h2 class="name">GALLERY</h2>
+				<div id="slide">
+					<div class="item" style="background-image: url(img/marble/beauty01.jpg);"></div>
+					<div class="item" style="background-image: url(img/marble/beauty03.jpg);"></div>
+					<div class="item" style="background-image: url(img/marble/breakdown01.jpg);"></div>
+					<div class="item" style="background-image: url(img/marble/beauty02.jpg);"></div>
+					<div class="item" style="background-image: url(img/marble/beauty04.jpg);"></div>
+					<div class="item" style="background-image: url(img/marble/beauty02.jpg);"></div>
+				</div>
+				<div class="buttons">
+					<button id="prev"><i class="fa-solid fa-chevron-left" style="color: #dedede"></i></button>
+					<button id="next"><i class="fa-solid fa-chevron-right" style="color: #dedede"></i></button>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				document.getElementById('next').onclick = function(){
+    				let lists = document.querySelectorAll('.item');
+    				document.getElementById('slide').appendChild(lists[0]);
+				}
+				document.getElementById('prev').onclick = function(){
+    				let lists = document.querySelectorAll('.item');
+    				document.getElementById('slide').prepend(lists[lists.length - 1]);
+				}
+  
+			</script>
+			
 		</div>
 		<div id="footer">
 			<p class="copyright">

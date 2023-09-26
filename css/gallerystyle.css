@@ -6,7 +6,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 98%;
-	height: 90vh;
+	height: 80vh;
 	padding: 20px;
 	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
@@ -52,8 +52,8 @@ h2.name{
 	border-radius: 20px;
 	background-position: center;
 	background-size: cover;
-	width: 960px;
-	height: 540px;
+	width: 906.24px;
+	height: 512px;
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -153,12 +153,14 @@ h2.name{
 	position: absolute;
 	bottom: 0.3vh;
 	left: calc(50% - 280px);
+	font-size: 1.2rem;
 }
 
 #next{
 	position: absolute;
 	bottom: 0.3vh;
 	left: calc(50% + 320px);
+	font-size: 1.2rem;
 }
 
 .buttons button{

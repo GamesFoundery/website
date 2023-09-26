@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../css/gotopbttnstyle.css">
 	<link rel="stylesheet" type="text/css" href="../css/classicbttnstyle.css">
+	<link rel="stylesheet" type="text/css" href="../css/gallerystyle.css">
 	<script src="https://kit.fontawesome.com/121f1df461.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -64,17 +65,53 @@
 		</a>
 		<div id="core">
 			<div id="banner">
-				
+				<div class="background">
+				</div>
 				<img src="../img/logoNaukar.png" class="logo">
-				<h2 class="pitch">EXPLORE THE DEPTHS OF THIS MISTERIOUS CAVE IN SEARCH FOR YOUR WIZARD MASTER !</h2>
-				<div id="bttnDownload">
-					<a href="https://mega.nz/file/f09lAIgA#JWE_pZKJEtCfOs4iF0mZxqTx2phKGQ5yhfK3AlocUlQ" class="bttnLink" target="	_blank">
-						<button class="bttnPage">
-							DOWNLOAD NAUKAR !
-						</button>
-					</a>
-				</div>			
+					<h2 class="pitch">EXPLORE THE DEPTHS OF THIS MISTERIOUS CAVE IN SEARCH FOR YOUR WIZARD MASTER !</h2>
+					<div id="bttnDownload">
+						<a href="https://mega.nz/file/f09lAIgA#JWE_pZKJEtCfOs4iF0mZxqTx2phKGQ5yhfK3AlocUlQ" class="bttnLink" target="	_blank">
+							<button class="bttnPage">
+								DOWNLOAD NAUKAR !
+							</button>
+						</a>
+					</div>							
 			</div>
+
+			<div class="secondBox">
+					<div class="container">
+						<h2 class="name">GALLERY</h2>
+						<div id="slide">
+							<div class="item" style="background-image: url(img/naukar/img1.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img2.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img3.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img4.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img5.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img6.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img7.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img8.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img9.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img10.jpg);"></div>
+							<div class="item" style="background-image: url(img/naukar/img1.jpg);"></div>
+						</div>
+						<div class="buttons">
+							<button id="prev"><i class="fa-solid fa-chevron-left" style="color: #dedede"></i></button>
+							<button id="next"><i class="fa-solid fa-chevron-right" style="color: #dedede"></i></button>
+						</div>
+					</div>
+			</div>
+
+			<script type="text/javascript">
+				document.getElementById('next').onclick = function(){
+    				let lists = document.querySelectorAll('.item');
+    				document.getElementById('slide').appendChild(lists[0]);
+				}
+				document.getElementById('prev').onclick = function(){
+    				let lists = document.querySelectorAll('.item');
+    				document.getElementById('slide').prepend(lists[lists.length - 1]);
+				}
+  
+			</script>
 			<div id="informations">
 					<div class="infos">
 						<h3 class="productionYear">

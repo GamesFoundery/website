@@ -15,7 +15,9 @@ body{
 .gallery a {
 	flex: 1 1 100%; /* Images occupy full width of their column */
     max-width: 800px;
+    height: 100%;
     margin: 0.1vh 0.15vw;
+    text-decoration: none;
 }
 
 .gallery img {
@@ -24,16 +26,62 @@ body{
     border-radius: 30px;
 }
 
+.gallery img:hover{
+    filter: blur(1px);
+}
+
+b.infos{
+    padding: 0;
+}
+.matTitle{
+    position: relative;
+    top: 700%;
+    left: 25%;
+    text-align: center;
+    padding: 0;
+    color: #dedede;
+    transform: translate(-25%, -700%);
+    font-size: 2vw;
+/*    display: none;*/
+}
+
+.separator{
+    position: relative;
+    top: 14000%;
+    text-align: center;
+    padding: 0;
+    color: #dedede;
+    transform: translate(0, -14000%);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productionYear{
+    position: relative;
+    top: 1300%;
+    left: 25%;
+    text-align: center;
+    padding: 0;
+    color: #dedede;
+    transform: translate(-25%, -1300%);
+    font-size: 1vw;
+}
+
+.prevMat{
+    width: 500px;
+}
+
     /* Responsive Styles */
-@media (min-width: 768px) {
+@media (min-width: 400px) {
     .gallery a {
     	flex-basis: calc(50% - 5px); /* Two columns with a small gap between them */
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 996px) {
     .gallery a {
-        flex-basis: calc(33.3333% - 10px); /* Three columns with a small gap between them */
+        flex-basis: calc(25% - 10px); /* Three columns with a small gap between them */
     }
 }
 

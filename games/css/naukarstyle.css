@@ -21,7 +21,24 @@ header{
 	border: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 30px;
 	backdrop-filter: blur(2px);
+	padding-bottom: 1vh;
 }
+
+.background{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 50%;
+	background-image: url(../img/naukar/bgNaukar.jpg);
+	border-radius: 30px;
+}
+
+.secondBox{
+	height: 100vh;
+	padding-top: 2vh;
+}
+
+
 
 img.logo{
 	width: 30vw;
@@ -36,6 +53,10 @@ img.logo{
 	margin: 0px;
 	font-size: 1.5vw;
 	padding-bottom: 10vh;
+}
+
+#informations{
+	padding-top: 1vh;
 }
 
 .infos{
@@ -123,4 +144,3 @@ table{
 	font-weight: bold;
 	transform: scale(1.02);
 }
-

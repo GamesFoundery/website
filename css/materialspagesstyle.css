@@ -79,6 +79,20 @@ video.square{
     margin-bottom: 10px;
 }
 
+button .prevMat{
+	padding: 10px 20px;
+	border: none;
+	opacity: 0;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(5px);
+	color: #dedede;
+	font-weight: bold;
+	animation: showcontent 1s ease-in-out 1 forwards;
+}
+
     /* Responsive Styles */
 @media (max-width: 768px) {
     .gallery img {
